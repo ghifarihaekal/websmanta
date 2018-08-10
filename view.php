@@ -15,7 +15,13 @@
     <table>
       <tr>
         <td><?=$fetchAlumni["nama_alumni"]?></td>
-        <td><?=$fetchAlumni["angkatan"]?></td>
+        <td>Angkatan <?=$fetchAlumni["angkatan"]?></td>
+      </tr>
+      <tr>
+        <td>
+          <a href="update.php?id=<?=$fetchAlumni["id_alumni"]?>"><button>Update</button></a>
+          <a href="delete.php?id=<?=$fetchAlumni["id_alumni"]?>"><button>Delete</button></a>
+        </td>
       </tr>
     </table>
 
